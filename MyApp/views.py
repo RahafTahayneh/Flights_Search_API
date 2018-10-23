@@ -6,6 +6,7 @@ journeys_list = {}
 
 
 def get_request(request):
+
     origin = request.GET.get('flying_from')
     arrival = request.GET.get('flying_to')
     departure_date = request.GET.get('departuring_date')
