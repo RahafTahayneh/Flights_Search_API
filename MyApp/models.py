@@ -48,7 +48,8 @@ class Journey(models.Model):
     arrival_airport = models.ForeignKey(Airport, related_name='TheArrivalAirport', on_delete=models.CASCADE)
     Departure_date_time = models.DateTimeField()
     Arrival_date_time = models.DateTimeField()
-    price=  models.CharField(max_length=128)
+    price = models.CharField(max_length=128)
+    journey_type = models.CharField(max_length=128, default='One Way')
 
     def __str__(self):
         return self.flight_code
