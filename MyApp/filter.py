@@ -68,10 +68,6 @@ class Flights:
             return list(list_of_journeys)
 
 
-def check_if_city_exists(city):
-    if City.objects.filter(city_name=city).exists():
-        return True
-    return False
 
 
 
